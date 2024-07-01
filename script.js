@@ -64,7 +64,7 @@ function updateButtons(text) {
                 <button class="btn" onclick="sendMessage('About Admission')">About Admission</button>
                 <button class="btn" onclick="sendMessage('Academic Programs')">Academic Programs</button>
                 <button class="btn" onclick="sendMessage('About Enrollment')">About Enrollment</button>
-                <button class="btn" onclick="sendMessage('About Adding, Dropping and Changing of Subjects/ Schedule')">Adding, Dropping and Changing of Subjects/ Schedule</button>
+                <button class="btn" onclick="sendMessage('About Adding, Dropping and Changing of Subjects/ Schedules')">About Adding, Dropping and Changing of Subjects/ Schedules</button>
                 <button class="btn" onclick="sendMessage('University')">About University</button>
                 <button class="btn" onclick="sendMessage('Student Organizations')">Student Organizations</button>
                 <button class="btn" onclick="sendMessage('Contacts')">Campus Contacts</button>
@@ -88,7 +88,7 @@ function updateButtons(text) {
                 <button class="btn" onclick="sendMessage('Goodbye')">Goodbye</button>
             `;
             break;
-        case 'about adding, dropping, and changing of subjects/ schedule':
+        case 'about adding, dropping and changing of subjects/ schedules':
             newButtons.innerHTML = `
                 <button class="btn" onclick="sendMessage('Adding of Subjects')">Adding of Subjects</button>
                 <button class="btn" onclick="sendMessage('Dropping of Subjects')">Dropping of Subject</button>
@@ -538,7 +538,7 @@ function getBotResponse(userText) {
                     Rest assured, the registrar's office is diligently processing everything. Please be patient while you wait for their email. 
                     <br> 
                     If you ever have a questions for the registrar just kindly send them a seperate email here. imus.registrar@cvsu.edu.ph`;
-        case 'about adding, dropping, and changing of subjects/ schedule':
+        case 'about adding, dropping and changing of subjects/ schedules':
             return `
             <p>Sure, I can help with that! You have a few options below: adding a subject, dropping a subject, or changing your schedule. All of these actions can be done through the student portal. Which one would you like to know more about?</p>
             <br>
