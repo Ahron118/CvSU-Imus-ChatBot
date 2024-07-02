@@ -64,9 +64,10 @@ function updateButtons(text) {
                 <button class="btn" onclick="sendMessage('About Admission')">About Admission</button>
                 <button class="btn" onclick="sendMessage('Academic Programs')">Academic Programs</button>
                 <button class="btn" onclick="sendMessage('About Enrollment')">About Enrollment</button>
-                <button class="btn" onclick="sendMessage('About Adding, Dropping and Changing of Subjects/ Schedules')">About Adding, Dropping and Changing of Subjects/ Schedules</button>
                 <button class="btn" onclick="sendMessage('University')">About University</button>
+                <button class="btn" onclick="sendMessage('News and Updates')">News and Updates</button>
                 <button class="btn" onclick="sendMessage('Student Organizations')">Student Organizations</button>
+                <button class="btn" onclick="sendMessage('About Adding, Dropping and Changing of Subjects/ Schedules')">About Adding, Dropping and Changing of Subjects/ Schedules</button>
                 <button class="btn" onclick="sendMessage('Contacts')">Campus Contacts</button>
                 <button class="btn" onclick="sendMessage('Goodbye')">Goodbye</button>
             `;
@@ -134,6 +135,12 @@ function updateButtons(text) {
             newButtons.innerHTML = `
                 <button class="btn" onclick="sendMessage('History')">History</button>
                 <button class="btn" onclick="sendMessage('Campus History')">Campus History</button>
+                <button class="btn" onclick="sendMessage('Campus Officials')">Campus Officials</button>
+                <button class="btn" onclick="sendMessage('Academic Departments')">Academic Departments</button>
+                <button class="btn" onclick="sendMessage('Faculty and Staff')">Faculty and Staff</button>
+                <button class="btn" onclick="sendMessage('Campus Offices')">Campus Offices</button>
+                <button class="btn" onclick="sendMessage('University Branches')">University Branches</button>
+                <button class="btn" onclick="sendMessage('Campus Map')">Campus Map</button>
                 <button class="btn" onclick="sendMessage('Vision, Mission, & Objectives')">Vision, Mission, & Objective</button>
                 <button class="btn" onclick="sendMessage('Seal')">Seal</button>
                 <button class="btn" onclick="sendMessage('Hymn')">Hymn</button>
@@ -193,6 +200,10 @@ function getBotResponse(userText) {
             <p><b>Graduate School Student</b></p>
             <p><b>✔</b>Have finished a bachelor degree program</p>
             <p><b>✔</b>Will enroll for a masters degree</p>
+            `;
+        case 'news and updates':
+            return `
+            <p>Stay informed with our campus latest news and updates! Whether it’s events, academic achievements, or community outreach, to keep you updated with all the happenings at our university. For the most recent updates, <a href="https://cvsu-imus.edu.ph/news/" target="_blank">see our campus latest news here.</a></p>
             `;
         case 'admission procedures':
             return 'What type of Applicant are you first before we proceed?';
@@ -633,6 +644,78 @@ function getBotResponse(userText) {
             </style>
             <p>Cavite State University's College of Business and Entrepreneurship launched in Imus on August 15, 2003, repurposing a building meant for the Cavite Convention and Trade Center. Initially offering programs in Business Management, Entrepreneurship, and Hotel and Restaurant Management, it expanded into Cavite State University Imus Campus in 2012. Adding programs like Computer Science, Psychology, and Education, the campus grew its facilities with a new 5-storey building, stage, and gymnasium. Strengthening ties across Cavite and Metro Manila, CvSU Imus Campus remains committed to producing globally competitive graduates through academic excellence and community service.</p>
             <p style="text-align: center;">See the full story here <a href="https://cvsu-imus.edu.ph/about/campushistory" target="_blank">on official website</a></p>
+            `;
+        case 'campus offices':
+            return ` 
+            <p>About the Campus Offices: Here is a list of the main offices on campus, all of which you can find more details about through the <a href="https://cvsu-imus.edu.ph/about/offices" target="_blank">Campus Official Website.</a></p>
+            <br>
+            <p><strong>List of Administrative Offices</strong></p>
+            <ul>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/campus-library" target="_blank">Campus Library</a>offers a vast collection of books, journals, and digital resources to support your academic needs. It is a quiet place for studying and conducting research.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/cashier-and-accounting-office" target="_blank">Cashier And Accounting Office</a> handles all financial transactions, including tuition payments, fees, and refunds. They ensure accurate and timely processing of all student accounts.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/civil-security-office" target="_blank">Civil Security Office</a> is responsible for maintaining campus safety and security. They manage security personnel and surveillance systems to ensure a safe environment for everyone.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/health-service-unit" target="_blank">Health Service Unit</a> provides medical and health-related services to students and staff. This includes routine check-ups, emergency care, and health education.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/human-resource-development-office" target="_blank">Human Resource Development Office</a> manages employee relations, recruitment, and professional development. They support the growth and well-being of the campus staff.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/institutional-development-office" target="_blank">Institutional Development Office</a> focuses on the strategic growth and improvement of the institution. They handle projects and initiatives that enhance the campus and its resources.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/management-information-system-office" target="_blank">Management Information System Office</a> oversees the campus's IT infrastructure, including networks, databases, and software systems. They ensure the efficient operation of technological resources.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/office-of-student-affairs-and-services" target="_blank">Office Of Student Affairs And Services</a> provides support and resources to enhance student life. This includes counseling, career services, and extracurricular activities.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/office-of-the-campus-administrator" target="_blank">Office Of The Campus Administrator</a> oversees the overall management and administration of the campus. They ensure that all operations run smoothly and efficiently.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/office-of-the-campus-registrar" target="_blank">Office Of The Campus Registrar</a> manages student records, course registrations, and academic transcripts. They ensure the accuracy and confidentiality of all student information.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/physical-planning-and-maintenance-services-office" target="_blank">Physical Planning And Maintenance Services Office</a> is responsible for the upkeep and maintenance of campus facilities. They ensure a safe and clean environment for all.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/property-and-supply-office" target="_blank">Property And Supply Office</a> handles the procurement, storage, and distribution of campus supplies and equipment. They manage inventory and ensure that all resources are available when needed.</li>
+                <li><a href="https://cvsu-imus.edu.ph/about/offices/research-development-and-extension-office" target="_blank">Research, Development And Extension Office</a> supports faculty and student research projects. They provide resources and guidance for academic and community-based research initiatives.</li>
+            </ul>
+            `;
+        case 'campus officials':
+            return `
+            <p>Our campus is managed by a dedicated team of officials who oversee various departments and programs to ensure the smooth operation of our institution. This includes the Campus Administrator, Campus Secretary, Campus Registrar, department chairpersons, program coordinators, and various other coordinators and officers. They work together to maintain high academic standards, support student services, and manage administrative functions. 
+            <br>
+            <br>
+            For more detailed information about our campus officials, please visit our <a href="https://cvsu-imus.edu.ph/about/campusofficials" target="_blank">Campus Official Website.</a></p>
+            `;
+        case 'campus map':
+            return `
+            <p>Our campus map is available online and provides a detailed view of all our facilities, buildings, and services. It's a great way to familiarize yourself with the layout and make navigating our campus easier. For more details, <a href="https://cvsu-imus.edu.ph/about/campusmap" target="_blank">see the campus map here.</a></p>
+            `;
+        case 'faculty and staff':
+            return `
+            <p>Our university is proud to have a dedicated team of 153 faculty members and 43 non-academic personnel. Our faculty are experienced and passionate about teaching, while our support staff ensure everything runs smoothly. We’re here to provide you with the best possible education and support.
+            <br><br>
+            For more details about our schools faculty and staff please visit <a href="https://cvsu-imus.edu.ph/about/facultyandstaff" target="_blank"> Our Campus Official Website. </a>
+            </p>
+            `;
+        case 'academic departments':
+            return `
+            <p>Our university has academic departments that are dedicated on providing a top-quality education in their field. Our departments are staffed by experienced and passionate faculty who are committed to student success. From below is the list of academic department our campus have.</p>
+            <h4>List of Academic Departments</h4>
+            <ul>
+                <li><a href="https://cvsu-imus.edu.ph/academics/departments/department-of-biological-and-physical-sciences" target="_blank">Department Of Biological And Physical Sciences</a></li>
+                <li><a href="https://cvsu-imus.edu.ph/academics/departments/department-of-computer-studies" target="_blank">Department Of Computer Studies</a></li>
+                <li><a href="https://cvsu-imus.edu.ph/academics/departments/department-of-hospitality-management" target="_blank">Department Of Hospitality Management</a></li>
+                <li><a href="https://cvsu-imus.edu.ph/academics/departments/department-of-languages-and-mass-communication" target="_blank">Department Of Languages And Mass Communication</a></li>
+                <li><a href="https://cvsu-imus.edu.ph/academics/departments/department-of-management" target="_blank">Department Of Management</a></li>
+                <li><a href="https://cvsu-imus.edu.ph/academics/departments/department-of-physical-education" target="_blank">Department Of Physical Education</a></li>
+                <li><a href="https://cvsu-imus.edu.ph/academics/departments/department-of-social-sciences-and-humanities" target="_blank">Department Of Social Sciences And Humanities</a></li>
+                <li><a href="https://cvsu-imus.edu.ph/academics/departments/teacher-education-department" target="_blank">Teacher Education Department</a></li>
+            </ul>
+            `;
+        case 'university branches':
+            return `
+            <p>Our university are proudly have several campus branches, each designed to provide an exceptional educational experience for students.</p>
+            <ul>
+                <li><a href="https://cvsu.edu.ph/" target="_blank">Main Campus</a></li>
+                <li><a href="https://cvsu.edu.ph/bacoor/" target="_blank">Bacoor Campus</a></li>
+                <li><a href="https://cvsu.edu.ph/carmona/" target="_blank">Carmona Campus</a></li>
+                <li><a href="https://cvsu.edu.ph/cavite-city-campus/" target="_blank">Cavite City Campus</a></li>
+                <li><a href="https://cvsu.edu.ph/general-trias-campus/" target="_blank">General Trias Campus</a></li>
+                <li><a href="https://cvsu-imus.edu.ph/" target="_blank">Imus Campus</a></li>
+                <li><a href="https://cvsu.edu.ph/maragondon-campus/" target="_blank">Maragondon Campus</a></li>
+                <li><a href="https://www.cvsu-naic.edu.ph/" target="_blank">Naic Campus</a></li>
+                <li><a href="https://cvsu-rosario.edu.ph/" target="_blank">Rosario Campus</a></li>
+                <li><a href="https://cvsu.edu.ph/silang-campus/" target="_blank">Silang Campus</a></li>
+                <li><a href="https://cvsu.edu.ph/tanza-campus/" target="_blank">Tanza Campus</a></li>
+                <li><a href="https://cvsu-trececampus.com/" target="_blank">Trece Martires City Campus</a></li>
+            </ul>
             `;
         case 'contacts':
             return `
